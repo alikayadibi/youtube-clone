@@ -1,0 +1,28 @@
+.app__videoContainer-container {
+   width: 100%;
+   padding: 0 auto;
+}
+
+.app__videoContainer {
+   width: calc(100% - 250.5px);
+
+   @media screen and(max-width:450px) {
+      width: 100%;
+   }
+
+   position: absolute;
+   top: 120px;
+   right: 0px;
+
+   display: flex;
+   flex-wrap: wrap;
+
+   background-color: var(--black-bg-1);
+}
+
+.app__videoContainer-menu-open {
+   width: calc(100% - 250.5px);
+}
+.app__videoContainer-menu-close {
+   width: 100%;
+}

@@ -1,0 +1,254 @@
+.app___navbar {
+   width: 100%;
+   height: 120px;
+
+   position: fixed;
+   z-index: 10;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   background-color: var(--black-bg-2);
+}
+
+.app___navbar-first-half {
+   width: 100%;
+   height: 50%;
+
+   z-index: 20;
+
+   display: flex;
+}
+
+.app___navbar-second-half {
+   width: 100%;
+   height: 50%;
+   padding: 0 5px;
+
+   display: flex;
+   justify-content: flex-end;
+}
+
+.app___navbar-menu-icon {
+   height: 50½;
+
+   margin: 0 25px;
+   @media screen and(max-width:720px) {
+      margin-right: 0px;
+   }
+   &:hover {
+      cursor: pointer;
+   }
+
+   svg {
+      font-size: 1.2rem;
+      color: #fff;
+   }
+}
+
+.app___navbar-logo-container {
+   flex: 1;
+   max-width: 430px;
+   &:hover {
+      cursor: pointer;
+   }
+}
+
+.app___navbar-logo {
+   width: 100px;
+   height: 100%;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   position: relative;
+
+   img {
+      color: red;
+      width: 30px;
+      margin-right: 5px;
+
+      @media screen and(max-width:720px) {
+         width: 15px;
+      }
+   }
+
+   p {
+      font-size: 1rem;
+      font-family: var(--font-base);
+      font-weight: 700;
+      @media screen and(max-width:720px) {
+         font-size: 0.7rem;
+      }
+
+      color: #fff;
+   }
+}
+
+.app___navbar-search {
+   flex: 1;
+
+   max-width: 700px;
+
+   .app___navbar-search-input {
+      display: flex;
+      align-items: center;
+
+      height: 40px;
+      width: 90%;
+      margin-right: 5px;
+      padding: 2px;
+
+      background-color: var(--gray-color);
+
+      input {
+         outline: none;
+         margin-right: 5px;
+
+         height: 100%;
+         flex: 1;
+         @media screen and(max-width:720px) {
+            max-width: 50px;
+         }
+
+         background-color: var(--black-bg-1);
+         color: #fff;
+
+         border: none;
+         padding: 3px;
+      }
+
+      svg {
+         color: #fff;
+         height: 100%;
+
+         font-size: 1.5rem;
+
+         margin: 0 10px;
+
+         &:hover {
+            cursor: pointer;
+         }
+      }
+   }
+
+   .app___navbar-search-mic {
+      border-radius: 50%;
+      background-color: var(--black-bg-1);
+
+      height: 40px;
+      width: 40px;
+
+      &:hover {
+         cursor: pointer;
+      }
+
+      svg {
+         color: #fff;
+      }
+   }
+}
+
+.app___navbar-btns-container {
+   flex: 1;
+   max-width: 430px;
+   @media screen and(max-width:450px) {
+      margin-right: 5px;
+   }
+
+   justify-content: flex-end;
+}
+
+.app___navbar-btns {
+   svg {
+      color: #fff;
+
+      font-size: 1.5rem;
+      margin-right: 25px;
+
+      &:hover {
+         cursor: pointer;
+      }
+
+      @media screen and(max-width:720px) {
+         font-size: 1.35rem;
+         margin-right: 15px;
+      }
+      @media screen and(max-width:450px) {
+         font-size: 1.1rem;
+         margin-right: 5px;
+      }
+   }
+}
+.app___navbar-btns-btn {
+   &:last-child {
+      margin-right: 0px;
+   }
+}
+
+.app___navbar-tags-list {
+   flex: 1;
+   overflow-y: hidden;
+   overflow-x: scroll;
+
+   justify-content: flex-start;
+}
+
+.app___navbar-tags {
+   width: calc(100% - 250.5px);
+   @media screen and(max-width:450px) {
+      width: 100%;
+   }
+
+   border-top: solid 2px var(--gray-color);
+
+   .app___navbar-tags-item {
+      margin-right: 5px;
+      background-color: var(--gray-color);
+      padding: 10px;
+      border-radius: 16px;
+      border: 1px solid #444;
+
+      p {
+         color: #fff;
+         white-space: nowrap;
+         font-family: var(--font-base);
+         font-size: 0.9rem;
+      }
+   }
+}
+
+/* width */
+.app___navbar-tags-list::-webkit-scrollbar {
+   height: 5px;
+}
+
+/* Track */
+.app___navbar-tags-list::-webkit-scrollbar-track {
+   background: var(--black-bg-2);
+   border-radius: 10px;
+}
+
+/* Handle */
+.app___navbar-tags-list::-webkit-scrollbar-thumb {
+   background: var(--black-bg-2);
+   border-radius: 10px;
+}
+
+/* Handle on hover */
+.app___navbar-tags-list::-webkit-scrollbar-thumb:hover {
+   background: #555;
+}
+
+.app___navbar-tags-arrow {
+   margin: 10px;
+   svg {
+      color: #fff;
+   }
+}
+
+.app__navbar-fullW {
+   width: 100%;
+}
